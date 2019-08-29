@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="scripts.Testlogin_gmail"/>
+      <class name="scripts.Testlogout_gmail"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="scripts.Testlogin_gmail">
+        <methods>
+          <include name="starttest123"/>
+          <include name="login_gmail"/>
+          <include name="extentreport123"/>
+          <include name="openAppln"/>
+        </methods>
+      </class> <!-- scripts.Testlogin_gmail -->
+      <class name="scripts.Testlogout_gmail">
+        <methods>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- scripts.Testlogout_gmail -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
